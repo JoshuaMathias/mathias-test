@@ -1,0 +1,26 @@
+{
+  "name": "mathias-test",
+  "version": "0.0.0",
+  "description": "Test module by Josh Mathias",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoshuaMathias/mathias-test"
+  },
+  "keywords": [
+    "test",
+    "mathias-test",
+    "Mathias",
+    "Josh Mathias",
+    "Joshuamonkey"
+  ],
+  "author": "Joshua Mathias <Joshuamonkey@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/JoshuaMathias/mathias-test/issues"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "*"
+  }
+}
