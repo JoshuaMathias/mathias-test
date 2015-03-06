@@ -11,7 +11,6 @@ http.createServer(function (req, res) {
   
   if(urlObj.pathname.indexOf("getcity") !=-1) {
    // Execute the REST service 
-      console.log(urlObj);
    var myRe = new RegExp("^"+urlObj.query["q"]);
    fs.readFile('cities.dat.txt', function (err, data) {
   if(err) throw err;

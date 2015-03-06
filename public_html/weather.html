@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#menuContainer").load("navigation.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+<div id="menuContainer"></div>
+<div>
+<h1>City Finder</h1>
+<form>
+Enter A Utah City: <input type="text" id="cityfield" value=""><br>
+<p>
+Suggestion: <select id="txtHint">Empty</select>
+</p>
+<input id="button" type="submit" value="Submit">
+</form>
+<p>City</p>
+<textarea id="dispcity">No City</textarea>
+<p>Current Weather</p>
+<div id="weather">No weather</div>
+
+</form>
+</div>
+<script>
+$( "#cityfield" ).keyup(function() {
+  //Use my amazon aws server.
+    var url = "https://http://52.11.53.79/getcity?q="+$("#cityfield").val();
+    $.getJSON(url,function(data) {
+    var everything;
+    $.each(data, function(i,item) {
+            everything += "<option>"+data[i].city+"</option>";
+    });
+
+    everything=everything.replace("undefined","");
+    $("#txtHint").html(everything);
+  })
+  //.done(function() {     
+
+  .fail(function(jqXHR, textStatus, errorThrown) { 
+    console.log('getJSON request failed! ' + textStatus); 
+    console.log("incoming "+jqXHR.responseText);
+  })
+  //.always(function() { console.log('getJSON request ended!');
+  //})
+  //.complete(function() { console.log("complete"); });
+});
+$("#button").click(function(e){
+  var value = $("#cityfield").val();
+  e.preventDefault();
+  $("#dispcity").text(value);
+  var myurl= "https://api.wunderground.com/api/9a99447093c7c5f4/geolookup/conditions/q/UT/";
+  myurl += value;
+  myurl += ".json";
+  $.ajax({
+    url : myurl,
+    dataType : "jsonp",
+    success : function(parsed_json) {
+          var location = parsed_json['location']['city'];
+          var temp_string = parsed_json['current_observation']['temperature_string'];
+          var current_weather = parsed_json['current_observation']['weather'];
+          everything = "<ul>";
+          everything += "<li>Location: "+location;
+          everything += "<li>Temperature: "+temp_string;
+          everything += "<li>Weather: "+current_weather;
+          everything += "</ul>";
+          $("#weather").html(everything);
+    }
+  });
+});
+    $("#txtHint").change(function() {
+        $("#txtHint option:selected").each(function(){
+            $("#cityfield").val($(this).val());
+        }); 
+    }).trigger("change");
+</script>
+</body>
+</html>
