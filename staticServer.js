@@ -12,9 +12,7 @@ http.createServer(function (req, res) {
   if (path=="/") {
     path="/index.html";
   }
-  debug("Started server");
   if(urlObj.pathname.indexOf("getcity") !=-1) {
-    debug("Get city");
    // Execute the REST service 
    var myRe = new RegExp("^"+urlObj.query["q"]);
    fs.readFile('cities.dat.txt', function (err, data) {
@@ -39,7 +37,6 @@ http.createServer(function (req, res) {
  } else {
   
   fs.readFile(ROOT_DIR + path, function (err,data) {
-    debug("Write file");
     if (err) {
       res.writeHead(404);
       res.end(JSON.stringify(err));
