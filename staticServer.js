@@ -1,15 +1,20 @@
 var fs = require('fs');
 var http = require('http');
+var https = require('https');
 var url = require('url');
+
 var ROOT_DIR = "public_html";
+
+
 http.createServer(function (req, res) {
   var urlObj = url.parse(req.url, true, false);
   var path=urlObj.pathname;
   if (path=="/") {
     path="/index.html";
   }
-  
+  debug("Started server");
   if(urlObj.pathname.indexOf("getcity") !=-1) {
+    debug("Get city");
    // Execute the REST service 
    var myRe = new RegExp("^"+urlObj.query["q"]);
    fs.readFile('cities.dat.txt', function (err, data) {
@@ -23,13 +28,18 @@ http.createServer(function (req, res) {
       citiesFiltered.push({city:cities[i]});
     }
   }
-  res.writeHead(200);
+  res.writeHead(200, {
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*"
+});
+
   res.end(JSON.stringify(citiesFiltered));
 });
 
  } else {
   
   fs.readFile(ROOT_DIR + path, function (err,data) {
+    debug("Write file");
     if (err) {
       res.writeHead(404);
       res.end(JSON.stringify(err));
