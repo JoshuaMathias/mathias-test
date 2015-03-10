@@ -34,7 +34,7 @@ Suggestion: <select id="txtHint">Empty</select>
 <script>
 $( "#cityfield" ).keyup(function() {
   //Use my amazon aws server.
-    var url = "https://http://52.11.53.79/getcity?q="+$("#cityfield").val();
+    var url = "http://52.11.53.79/getcity?q="+$("#cityfield").val();
     $.getJSON(url,function(data) {
     var everything;
     $.each(data, function(i,item) {
