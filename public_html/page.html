@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+    background-color: cyan;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(document).ready(function(){
+    $("#submitButton").click(function(){
+        var myobj = {Name:$("#Name").val(),Comment:$("#Comment").val()};
+        jobj = JSON.stringify(myobj);
+        console.log(myobj);
+        $("#json").text(jobj);
+        var url = "http://52.11.53.79/comment";
+        jQuery.ajax ({
+            url: url,
+            type: "POST",
+            data: jobj,
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+
+            success: function(){
+              $("#done").append("Success");
+            }
+        });
+    });
+    $("#showComments").click(function() {
+        var url = "https://52.11.53.79/comment";
+      $.getJSON(url,function(data) {
+        var everything;
+        everything = "<ul>";
+        $.each(data, function(i,item) {
+          everything += "<li> Name: "+data[i].Name+" Comment: "+data[i].Comment;
+        });
+        everything += "</ul>";
+        $("#currentComments").html(everything);
+      });
+    });
+});
+</script>
+</head>
+<body>
+
+<form id="commentForm" action="">
+  Name: <input type="text" id="Name" id="Name" value="Mickey"><br>
+  Comment: <input type="text" id="Comment" id="Comment" value="Hello"><br>
+</form>
+
+<button id="submitButton">Submit Comment</button>
+<button id="showComments">Show Comments</button>
+
+<div id="json"></div>
+<div id="done"></div>
+<div id="currentComments"></div>
+
+</body>
+</html>
