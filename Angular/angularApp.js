@@ -59,18 +59,12 @@ angular.module('weatherNews', ['ui.router'])
     postFactory.getAll();
     $scope.posts = postFactory.posts;
    $scope.addPost = function(){
-    console.log("Adding post");
        if($scope.formContent === '') { return; }
-    $scope.posts.push({
-      title: $scope.formContent,
-      upvotes: 0,
-      comments: [
-      ]
-    });
+       postFactory.create({title: $scope.formContent});
     $scope.formContent = '';
   };
      $scope.incrementUpvotes = function(post) {
-      post.upvotes += 1;
+      postFactory.upvote(post);
   };
   }
 ])
@@ -79,9 +73,12 @@ angular.module('weatherNews', ['ui.router'])
   '$stateParams',
   'postFactory', 
   function($scope, $stateParams, postFactory){
+    if (postFactory.posts.length===0) {
+      window.location.replace("http://52.11.53.79/");
+    }
+    console.log("factory posts: ");
+    console.log(postFactory.posts);
     var mypost = postFactory.posts[$stateParams.id];
-    console.log("posts: "+postFactory.posts);
-    console.log("stateParams id: "+$stateParams.id);
   postFactory.getPost(mypost._id);
   $scope.post = postFactory.post;
     $scope.addComment = function(){
@@ -95,7 +92,6 @@ angular.module('weatherNews', ['ui.router'])
       $scope.body = '';
     };
  $scope.incrementUpvotes = function(comment){
-    console.log("incrementUp "+postFactory.post._id+" comment "+comment._id);
     postFactory.upvoteComment(postFactory.post, comment);
   };
 }]);
