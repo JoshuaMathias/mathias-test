@@ -1,0 +1,211 @@
+
+> cluster@0.0.0 start /var/node/cluster
+> node ./bin/www
+
+ID 10843
+[0mGET / [32m200 [0m15.934 ms - 599[0m
+[0mGET /javascripts/angularApp.js [36m304 [0m2.728 ms - -[0m
+Service ID 10843
+[0mGET /pid [32m200 [0m1.745 ms - 31[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.786 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.407 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.512 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.459 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.476 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.363 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.618 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.412 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.431 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.360 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.131 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.376 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.378 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.681 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.418 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.560 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.422 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.361 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.526 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.447 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.371 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.374 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.415 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.396 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.375 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.901 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.642 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.393 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.275 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.399 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.583 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.546 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.507 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.580 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.579 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.525 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.608 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.573 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.810 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.601 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.101 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.698 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.561 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.542 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.383 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.581 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m2.005 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.438 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.435 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.358 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.388 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.349 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.364 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.378 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.365 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.346 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m2.444 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.584 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.471 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.128 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.444 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.468 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m2.341 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.966 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.473 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.436 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.506 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.722 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.693 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.432 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.535 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.469 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.420 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.393 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.441 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m1.189 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.748 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.604 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.612 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.611 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.533 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.652 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.546 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.517 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.628 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.740 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.633 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.917 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.654 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.737 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.546 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.633 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.680 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.436 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.739 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.803 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.456 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.769 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.568 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.787 ms - -[0m
+Service ID 10843
+[0mGET /pid [36m304 [0m0.846 ms - -[0m
